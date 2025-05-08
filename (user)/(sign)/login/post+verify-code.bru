@@ -1,0 +1,17 @@
+meta {
+  name: post+verify-code
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/login/verify-code
+  body: json
+  auth: none
+}
+
+body:json {
+  { 
+   "code":"12345"
+  }
+}

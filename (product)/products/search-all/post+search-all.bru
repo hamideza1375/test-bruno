@@ -1,0 +1,17 @@
+meta {
+  name: post+search-all
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/products/search-all
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "text":"a"
+  }
+}

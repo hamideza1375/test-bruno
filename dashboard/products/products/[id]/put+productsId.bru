@@ -1,0 +1,20 @@
+meta {
+  name: put+productsId
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:3000/api/dashboard/products/products/1234
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  title: title
+  price: 1234
+  description: description
+  info: info
+  image: @file(C:\Users\rezaa\OneDrive\Pictures\172071215دتتد87908.jpg)
+  video: @file(C:\Users\rezaa\Desktop\all5\all2\n\4-routing\nextjs_part_4.mp4)
+}

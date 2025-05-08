@@ -1,0 +1,20 @@
+meta {
+  name: put+partsId
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/api/dashboard/products/parts/1234/9999
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  title: e-title
+  description: e-description
+  chapter: 1
+  time: 20
+  video: @file(C:\Users\rezaa\Desktop\all5\all2\n\5-layout\nextjs_part_5.mp4)
+  source: @file(C:\Users\rezaa\Desktop\all5\all4\EFI-EliteBook8560p.zip)
+}

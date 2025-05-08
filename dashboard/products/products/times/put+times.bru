@@ -1,0 +1,17 @@
+meta {
+  name: put+times
+  type: http
+  seq: 2
+}
+
+put {
+  url: http://localhost:3000/dashboard/products/products/times
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "times":20
+  }
+}

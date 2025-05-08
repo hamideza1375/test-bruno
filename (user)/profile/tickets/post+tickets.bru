@@ -1,0 +1,17 @@
+meta {
+  name: post+tickets
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/profile/tickets
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  title: title1
+  message: message1
+  image: @file(C:\Users\rezaa\OneDrive\Pictures\image2s.png)
+}

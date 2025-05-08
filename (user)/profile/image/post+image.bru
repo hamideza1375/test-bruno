@@ -1,0 +1,15 @@
+meta {
+  name: post+image
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3000/api/profile/image
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  image: @file(C:\Users\rezaa\OneDrive\Pictures\172071215دتتد87908.jpg)
+}

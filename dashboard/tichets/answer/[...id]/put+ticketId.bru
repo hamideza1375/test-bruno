@@ -1,0 +1,16 @@
+meta {
+  name: put+ticketId
+  type: http
+  seq: 3
+}
+
+put {
+  url: http://localhost:3000/api/dashboard/tickets/answer/12345/9999
+  body: multipartForm
+  auth: none
+}
+
+body:multipart-form {
+  message: edit-msg
+  image: @file(C:\Users\rezaa\OneDrive\Pictures\p\233972.jpg)
+}

@@ -1,0 +1,18 @@
+meta {
+  name: post+offers
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/dashboard/products/offers
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "exp":"20",
+    "value":"10"
+  }
+}
