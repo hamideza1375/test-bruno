@@ -5,9 +5,13 @@ meta {
 }
 
 post {
-  url: http://localhost:3000/api/products/comments
+  url: http://localhost:3000/api/products/comments?productID=682f4f9902c76645199ff661
   body: json
   auth: none
+}
+
+params:query {
+  productID: 682f4f9902c76645199ff661
 }
 
 body:json {

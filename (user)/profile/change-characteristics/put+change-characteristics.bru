@@ -6,6 +6,10 @@ meta {
 
 put {
   url: http://localhost:3000/api/profile/change-characteristics
-  body: none
+  body: json
   auth: none
+}
+
+body:json {
+  { "code":"12345", "username":"ahmim", "newPassword":"123456" }
 }

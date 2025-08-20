@@ -1,0 +1,24 @@
+meta {
+  name: post+products
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:3000/api/dashboard/products/products?categoryId=682f515302c76645199ff66d
+  body: multipartForm
+  auth: none
+}
+
+params:query {
+  categoryId: 682f515302c76645199ff66d
+}
+
+body:multipart-form {
+  image: @file(C:\Users\rezaa\OneDrive\Pictures\172071215دتتد87908.jpg)
+  video: @file(C:\Users\rezaa\OneDrive\Pictures\-8k6CpQca_Screenshot (100).png)
+  title: tttt
+  price: 400000
+  info: inf
+  description: des
+}
